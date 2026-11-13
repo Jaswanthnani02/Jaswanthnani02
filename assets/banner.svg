@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Jaswanth Gaddam: Cloud and AI Solutions Engineer · Chicago">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#13294b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="260" rx="16" fill="url(#bg)"/>
+  <g stroke="#38bdf8" stroke-opacity="0.25" stroke-width="1.5" fill="none">
+    <path d="M760 60 L880 110 L1000 70 L1110 130"/>
+    <path d="M880 110 L900 200 L1040 190 L1110 130"/>
+    <path d="M760 60 L800 180 L900 200"/>
+  </g>
+  <g fill="#38bdf8">
+    <circle cx="760" cy="60" r="6"/><circle cx="880" cy="110" r="8"/><circle cx="1000" cy="70" r="6"/>
+    <circle cx="1110" cy="130" r="7"/><circle cx="900" cy="200" r="6"/><circle cx="1040" cy="190" r="6"/>
+    <circle cx="800" cy="180" r="5" fill="#818cf8"/>
+  </g>
+  <text x="60" y="110" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#f8fafc">Jaswanth Gaddam</text>
+  <rect x="60" y="130" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="60" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#cbd5e1">Cloud and AI Solutions Engineer · Chicago</text>
+  <text x="60" y="214" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#94a3b8">AI search · MCP servers · ticket automation · data platforms</text>
+</svg>
