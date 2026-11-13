@@ -83,7 +83,7 @@ Relative links only, on purpose. External URL checking needs the network, gets r
 
 **[mcp-rbac-demo](https://github.com/Jaswanthnani02/mcp-rbac-demo)**: authorization for LLM tool servers
 
-A tool server with two authentication paths and three permission tiers, against mock data. The runnable version of a pattern I describe in [decision 0005](https://github.com/Jaswanthnani02/client-intelligence-platform/blob/main/docs/decisions/0005-per-call-authorization.md) of the case study: authorize every call rather than every session, on both what a caller may do and whose data they may see.
+A tool server with API-key authentication and three permission tiers, against mock data. A runnable slice of the pattern in [decision 0005](https://github.com/Jaswanthnani02/client-intelligence-platform/blob/main/docs/decisions/0005-per-call-authorization.md) of the case study: authorize every call rather than every session. It implements the role axis; the client-scoping axis is described in the decision record.
 
 **[ticket-dispatcher-demo](https://github.com/Jaswanthnani02/ticket-dispatcher-demo)**: assignment under load
 
