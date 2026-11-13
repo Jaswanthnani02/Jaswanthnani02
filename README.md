@@ -21,6 +21,12 @@ I build data platforms, MCP servers and automation that make messy operational r
 
 Most of my production work is in private repositories, so what is here is the part that travels: the architecture, the decisions and the failures, written up so they are useful to someone who will never see the code.
 
+| ~70% | 90%+ | 100,000+ | 10 min |
+|:---:|:---:|:---:|:---:|
+| faster technician document lookup with a hybrid-retrieval RAG platform | AI agent first-try success on documentation queries, up from about 40% | tickets assigned automatically in six months | new-hire setup with n8n automation, down from 2 to 5 days |
+
+Production systems on Azure: RAG search, MCP servers with per-call authorization, event-driven ticket automation and multi-source data platforms. Before that, data engineering: ETL pipelines processing 5M+ records a day with PySpark, PostgreSQL, Kafka and Tableau.
+
 ---
 
 ## Start here
