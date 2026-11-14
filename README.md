@@ -95,7 +95,7 @@ Round-robin and weighted-load ticket assignment against a mock PSA API, the publ
 |---|---|
 | [call-auditor-app](https://github.com/Jaswanthnani02/call-auditor-app) | AI call quality auditor that analyzes customer-service calls for compliance issues and sentiment |
 | [HR-Messages](https://github.com/Jaswanthnani02/HR-Messages) | Streamlit app that matches resumes to job descriptions and drafts personalized recruiter outreach |
-| [worldmonitor](https://github.com/Jaswanthnani02/worldmonitor) | Real-time geopolitical intelligence dashboard with a hand-gesture AI assistant |
+| [worldmonitor](https://github.com/Jaswanthnani02/worldmonitor) | Extension of the open-source World Monitor dashboard: webcam hand-gesture and voice control for its AI analyst, plus Gemini support |
 | [vs](https://github.com/Jaswanthnani02/vs) | Voice chatbot for visually impaired users: a Rasa assistant on AWS EC2 with a React Native app |
 | [Resume_Classifier](https://github.com/Jaswanthnani02/Resume_Classifier) | Random forest resume classifier with a deployment script |
 
