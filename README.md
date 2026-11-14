@@ -25,6 +25,8 @@ Most of my production work is in private repositories, so what is here is the pa
 |:---:|:---:|:---:|:---:|
 | faster technician document lookup with a hybrid-retrieval RAG platform | AI agent first-try success on documentation queries, up from about 40% | tickets assigned automatically in six months | new-hire setup with n8n automation, down from 2 to 5 days |
 
+Figures come from production systems: the RAG knowledge platform (lookup time and agent accuracy), the ticket dispatcher (tickets assigned) and the onboarding automation (setup time).
+
 Production systems on Azure: RAG search, MCP servers with per-call authorization, event-driven ticket automation and multi-source data platforms. Before that, data engineering: ETL pipelines processing 5M+ records a day with PySpark, PostgreSQL, Kafka and Tableau.
 
 ---
@@ -77,7 +79,7 @@ flowchart LR
 
 **[doc-link-check](https://github.com/Jaswanthnani02/doc-link-check)**: a tool that came out of the case study
 
-Verifies that every relative link in a project's Markdown resolves. One file, no dependencies, no network. It exists because reorganizing a documentation tree quietly invalidated a dozen paths cited in source comments, where no test and no compiler knows a comment is a reference.
+Verifies that every relative link in a project's Markdown resolves. One file, no dependencies, no network. It came out of a documentation reorganization that quietly broke cross-references: it catches the Markdown ones, and paths cited in source comments still need a test of their own.
 
 Relative links only, on purpose. External URL checking needs the network, gets rate-limited, and produces false failures until people ignore the results.
 
@@ -96,8 +98,7 @@ Round-robin and weighted-load ticket assignment against a mock PSA API, the publ
 | [call-auditor-app](https://github.com/Jaswanthnani02/call-auditor-app) | AI call quality auditor that analyzes customer-service calls for compliance issues and sentiment |
 | [HR-Messages](https://github.com/Jaswanthnani02/HR-Messages) | Streamlit app that matches resumes to job descriptions and drafts personalized recruiter outreach |
 | [worldmonitor](https://github.com/Jaswanthnani02/worldmonitor) | Extension of the open-source World Monitor dashboard: webcam hand-gesture and voice control for its AI analyst, plus Gemini support |
-| [vs](https://github.com/Jaswanthnani02/vs) | Voice chatbot for visually impaired users: a Rasa assistant on AWS EC2 with a React Native app |
-| [Resume_Classifier](https://github.com/Jaswanthnani02/Resume_Classifier) | Random forest resume classifier with a deployment script |
+| [vs](https://github.com/Jaswanthnani02/vs) | Speech-to-speech indoor navigation assistant for visually impaired users, built on Rasa and deployed on AWS EC2 |
 
 ---
 
@@ -105,7 +106,7 @@ Round-robin and weighted-load ticket assignment against a mock PSA API, the publ
 
 **Failures that are silent.** Four of the five production incidents I have written up produced no error at all: the system kept reporting success while doing less than it should. That changed how I monitor things more than any individual fix. Absence and staleness are better signals than errors, because a job that does not run cannot report that it failed.
 
-**Invariants that execute.** A constraint in a comment is a hope. A constraint with a test behind it is a guarantee. The rules that broke in production were, without exception, the ones documented rather than asserted.
+**Invariants that execute.** A constraint in a comment is a hope. A constraint with a test behind it is a guarantee. Most of the rules that broke in production were the ones documented rather than asserted.
 
 **Choosing the failure direction.** A permission that is forgotten should produce a tool nobody can call, not one everybody can call. Both are bugs; only one is discovered by an audit.
 
